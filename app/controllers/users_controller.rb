@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    @sorted_users = @users.sort{|a,b| b.points <=> a.points}
+    render json: @sorted_users
   end
 
   # GET /users/1
