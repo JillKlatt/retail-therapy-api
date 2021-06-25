@@ -6,6 +6,7 @@ class UsersController < ApplicationController
     @users = User.all
 
     @sorted_users = @users.sort{|a,b| b.points <=> a.points}
+
     render json: @sorted_users
   end
 
