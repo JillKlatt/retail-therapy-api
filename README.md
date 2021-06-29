@@ -1,25 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Jill Klatt Flatiron Phase 5 REACT / REDUX Project
+# Retail Therapy
 
-Things you may want to cover:
+ 
+## An interactive story of one hourly assistant manager's journey to rescue their manager from the evil DM!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# retail-therapy-api
+ 
+### Back-End Install Instructions:
+<br />
+Run:
+<br />
+ ```bundle install``` to install necessary gems
+<br />
+```rails db:migrate``` to create the tables
+<br />
+```rails db:seed``` to create default Leaderboard contents
+<br />
+```rails s``` to launch the backend API server
+<br />
