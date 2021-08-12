@@ -7,22 +7,22 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(
-    name: "Big Winner Babay!",
+    username: "Big Winner Babay!",
     points: 100,
     health: 50
 )
 User.create(
-    name: "Thunder",
+    username: "Thunder",
     points: 70,
     health: 40
 )
 User.create(
-    name: "Maggie",
+    username: "Maggie",
     points: 50,
     health: 50
 )
 User.create(
-    name: "Big Stinky Loser",
+    username: "Big Stinky Loser",
     points: 10,
     health: 10
 )
