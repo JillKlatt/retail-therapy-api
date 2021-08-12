@@ -5,9 +5,11 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
+    # Sorts users on the backend for local state storage
     @sorted_users = @users.sort{|a,b| b.points <=> a.points}
-
     render json: @sorted_users
+
+    # render json: @users
   end
 
   # GET /users/1
@@ -48,6 +50,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:username, :points)
+      params.require(:user).permit(:username, :points, :health)
     end
 end
